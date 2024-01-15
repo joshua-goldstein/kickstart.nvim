@@ -16,9 +16,10 @@ require "paq" {
     {'hrsh7th/cmp-nvim-lsp'};
     {'L3MON4D3/LuaSnip'};
     -- treesitter
-    {"nvim-treesitter/nvim-treesitter", run='TSUpdate'},
+    {"nvim-treesitter/nvim-treesitter", build = 'TSUpdate'},
     -- telescope
     { 'nvim-lua/plenary.nvim' },
-    { 'nvim-telescope/telescope-fzf-native.nvim', run='make'},
+    { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make'},
     { 'nvim-telescope/telescope.nvim', branch='0.1.x'},
+    { 'Olical/conjure' }
 }
