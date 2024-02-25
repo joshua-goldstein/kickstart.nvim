@@ -4,6 +4,8 @@
 -- chris@machine: https://github.com/LunarVim/nvim-basic-ide/blob/master/lua/options.lua
 -- missing semester MIT
 
+
+-- :help vim.opt, :help vim.o
 -- Make line numbers default
 vim.wo.number = true
 -- allows neovim to access the system clipboard
@@ -27,3 +29,5 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+-- status bar
+vim.opt.laststatus = 1

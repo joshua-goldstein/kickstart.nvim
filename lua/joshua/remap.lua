@@ -2,14 +2,18 @@ local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
 
 -- convenience function
+-- :help nvim_set_keymap
 local keymap = vim.api.nvim_set_keymap
+-- can also use keymap = vim.keymap.set
 
 -- must happen before plugins are required (otherwise wrong leader will be used)
--- mee `:help mapleader`
+-- me `:help mapleader`
 -- from chris@machine: what is this doing? 
 -- -keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+-- https://www.reddit.com/r/vim/comments/1vdrxg/space_is_a_big_key_what_do_you_map_it_to/
+-- keymap("", " ", "<leader>", { silent = true })
 
 vim.keymap.set("n", "<leader>p", vim.cmd.Ex)
 
